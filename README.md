@@ -15,4 +15,6 @@ The included project highlights the working code with a simple Test Host. This w
 
 ## How to run testing 
 1-   Select iOSChallengeTests Scheme and Press CMD+U to run Tests
+
+
 2-  Select iOSChallengeUITests Scheme and Press CMD+U to run Tests
