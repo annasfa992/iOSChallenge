@@ -31,4 +31,9 @@ public enum Subtype: String, Codable {
 public enum MediaType: String, Codable {
     case image = "image"
 }
+public enum Subsection: String, Codable {
+    case americas = "Americas"
+    case empty = ""
+    case politics = "Politics"
+}
 

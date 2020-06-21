@@ -40,6 +40,7 @@
 		735882DA24877F8A00F2241D /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735882D824877F8A00F2241D /* HeaderCell.xib */; };
 		735882E12487951200F2241D /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735882DF2487951200F2241D /* ImageCell.swift */; };
 		735882E22487951200F2241D /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735882E02487951200F2241D /* ImageCell.xib */; };
+		73B0CBCE249F813E00EC6F70 /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B0CBCD249F813E00EC6F70 /* OfflineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		735882D824877F8A00F2241D /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		735882DF2487951200F2241D /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		735882E02487951200F2241D /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		73B0CBCD249F813E00EC6F70 /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				7358823524862B6200F2241D /* Managers */,
 				7358823424862B5A00F2241D /* Models */,
 				7358823324862B5100F2241D /* Utilities */,
+				73B0CBCD249F813E00EC6F70 /* OfflineViewController.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				735882C624863E8300F2241D /* MostPopulerResultRequestModel.swift in Sources */,
 				7358820224862A9200F2241D /* SceneDelegate.swift in Sources */,
 				735882CF2486459F00F2241D /* MostPopulerCell.swift in Sources */,
+				73B0CBCE249F813E00EC6F70 /* OfflineViewController.swift in Sources */,
 				735882C224863D6D00F2241D /* MostPopulerMediaResponseModel.swift in Sources */,
 				735882B32486395500F2241D /* Constants.swift in Sources */,
 				7358823B24862BAA00F2241D /* RequestModel.swift in Sources */,

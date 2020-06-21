@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yJG-gA-9SO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yJG-gA-9SO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="89.732142857142847"/>
+            <point key="canvasLocation" x="770" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y3r-cq-QJv">
@@ -101,7 +101,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MV8-m2-Fwf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="90"/>
+            <point key="canvasLocation" x="1394" y="90"/>
+        </scene>
+        <!--Offline View Controller-->
+        <scene sceneID="hhE-rj-2rs">
+            <objects>
+                <viewController storyboardIdentifier="OfflineViewController" modalPresentationStyle="fullScreen" id="8DO-K0-dOX" customClass="OfflineViewController" customModule="LucyPayAgent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFb-ks-usu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ryo-vW-kAh">
+                                <rect key="frame" x="87" y="369.5" width="240" height="157"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offline" translatesAutoresizingMaskIntoConstraints="NO" id="nBh-lF-M4d">
+                                        <rect key="frame" x="45" y="0.0" width="150" height="145"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="145" id="TxO-Km-k58"/>
+                                            <constraint firstAttribute="width" constant="150" id="gI3-Mv-CC3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are offline, connect to the internet" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xM-0O-bcL">
+                                        <rect key="frame" x="0.0" y="123" width="240" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="tUm-Q9-vMH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.51433295759999997" green="0.54734961000000004" blue="0.56930343380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="60t-gO-Z2L"/>
+                                    <constraint firstItem="3xM-0O-bcL" firstAttribute="centerX" secondItem="nBh-lF-M4d" secondAttribute="centerX" id="C5M-QI-LLu"/>
+                                    <constraint firstItem="3xM-0O-bcL" firstAttribute="leading" secondItem="Ryo-vW-kAh" secondAttribute="leading" id="EMb-HW-7hH"/>
+                                    <constraint firstAttribute="height" constant="157" id="PqO-5A-pAR"/>
+                                    <constraint firstItem="nBh-lF-M4d" firstAttribute="centerX" secondItem="Ryo-vW-kAh" secondAttribute="centerX" id="eqr-Vx-rQS"/>
+                                    <constraint firstAttribute="bottom" secondItem="3xM-0O-bcL" secondAttribute="bottom" id="lrK-gQ-25Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="nBh-lF-M4d" secondAttribute="trailing" constant="45" id="pSp-8T-Qy6"/>
+                                    <constraint firstItem="nBh-lF-M4d" firstAttribute="top" secondItem="Ryo-vW-kAh" secondAttribute="top" id="sE4-Ca-gop"/>
+                                    <constraint firstItem="nBh-lF-M4d" firstAttribute="leading" secondItem="Ryo-vW-kAh" secondAttribute="leading" constant="45" id="tK5-s6-WbV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ryo-vW-kAh" firstAttribute="centerX" secondItem="OFb-ks-usu" secondAttribute="centerX" id="Ktm-rX-RUZ"/>
+                            <constraint firstItem="Ryo-vW-kAh" firstAttribute="centerY" secondItem="OFb-ks-usu" secondAttribute="centerY" id="Orv-nY-06x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bM7-MM-Xfk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txh-2B-KFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2036" y="90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="offline" width="150" height="145"/>
+    </resources>
 </document>

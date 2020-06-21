@@ -68,7 +68,7 @@ extension MostPopulerDetailsVC : UITableViewDelegate,UITableViewDataSource{
                  cell.dateLbl.isHidden = true
                 return cell
         case 2:
-              cell.dateLbl.text = ObjData.published_date
+            cell.dateLbl.text = ObjData.published_date
             cell.titleLbl.font = UIFont.systemFont(ofSize: 17.0)
              cell.titleLbl.text = ObjData.abstract
              cell.dateLbl.isHidden = false
